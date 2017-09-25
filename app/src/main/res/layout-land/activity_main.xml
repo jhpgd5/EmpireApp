@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.jp048220.empireapp.MainActivity">
+
+
+    <Button
+        android:id="@+id/StrikeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Strike"
+        tools:layout_editor_absoluteX="147dp"
+        tools:layout_editor_absoluteY="94dp"
+        android:layout_marginLeft="75dp"
+        android:layout_marginStart="75dp"
+        android:layout_above="@+id/TotalOutsText"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="47dp" />
+
+    <Button
+        android:id="@+id/BallButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ball"
+        tools:layout_editor_absoluteX="148dp"
+        tools:layout_editor_absoluteY="347dp"
+        android:layout_marginLeft="19dp"
+        android:layout_marginStart="19dp"
+        android:layout_alignBaseline="@+id/StrikeButton"
+        android:layout_alignBottom="@+id/StrikeButton"
+        android:layout_toRightOf="@+id/StrikeButton"
+        android:layout_toEndOf="@+id/StrikeButton" />
+
+    <TextView
+        android:id="@+id/StrikeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="35dp"
+        android:layout_marginEnd="31dp"
+        android:layout_marginRight="31dp"
+        android:text="Strike :"
+        android:textSize="30sp"
+        android:layout_above="@+id/BallText"
+        android:layout_toLeftOf="@+id/StrikeCount"
+        android:layout_toStartOf="@+id/StrikeCount" />
+
+    <TextView
+        android:id="@+id/BallText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="33dp"
+        android:text="Ball:"
+        android:textSize="30sp"
+        android:layout_above="@+id/StrikeButton"
+        android:layout_alignLeft="@+id/StrikeButton"
+        android:layout_alignStart="@+id/StrikeButton" />
+
+    <TextView
+        android:id="@+id/StrikeCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textSize="30sp"
+        android:layout_alignBaseline="@+id/StrikeText"
+        android:layout_alignBottom="@+id/StrikeText"
+        android:layout_alignRight="@+id/StrikeButton"
+        android:layout_alignEnd="@+id/StrikeButton" />
+
+    <TextView
+        android:id="@+id/BallCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textSize="30sp"
+        android:layout_alignBaseline="@+id/BallText"
+        android:layout_alignBottom="@+id/BallText"
+        android:layout_alignLeft="@+id/StrikeCount"
+        android:layout_alignStart="@+id/StrikeCount" />
+
+    <TextView
+        android:id="@+id/TotalOutsText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="25dp"
+        android:text="Total Outs:"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/BallText"
+        android:layout_toEndOf="@+id/BallText" />
+
+    <TextView
+        android:id="@+id/TotalOutsCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/TotalOutsText"
+        android:layout_toEndOf="@+id/BallButton"
+        android:layout_toRightOf="@+id/BallButton"
+        android:text="0"
+        android:textSize="24sp" />
+
+</RelativeLayout>
